@@ -21,7 +21,7 @@ public class Produto {
 		this.marca = marca;	
 	}
 	Produto(String nome, String marca, float valor) {
-		this.nome =nome;
+		this.nome = nome;
 		this.marca = marca;
 		this.valor = valor;
 	}
