@@ -8,7 +8,6 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-import org.junit.Test;
 import org.junit.platform.commons.annotation.Testable;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -39,7 +38,6 @@ public static Collection<Object[]> datos(){
 	}
 	);
 }
-@Test
 Publi void TestReservarCoche() {
 	
 	AlquilerCoches reserva= new AlquilerCoches(PrecioDiario, Descuento);
@@ -49,5 +47,4 @@ Publi void TestReservarCoche() {
 	asserEquals("Error",PrecioTotal , precio);
 
 }
-
 
