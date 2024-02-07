@@ -3,7 +3,7 @@ package estudos;
 public class JavaWhileMain {
 
 	public static void main(String[] args) {
-		// TRUE or False
+		// TRUE ou False
 		// Sempre que o valor da funcao for "TRUE", tudo que esta dentro da funcao sera executado.
 		// while nada mais é que uma funcao criada para funcionar com uma condicao.
 		// primeiro se cria a variavel da condicao, assim o codigo verificará se é verdadeiro ou falso e dará continuidade
@@ -20,6 +20,6 @@ public class JavaWhileMain {
 		}
 	}// while -> pode ser que seja executado nenhuma vez ou muitas vezes
 }	 // enquanto que o DO WHILE -> é garantido que será executado pelo menos uma vez
-// dsad
+
 
 
