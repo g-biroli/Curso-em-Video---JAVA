@@ -1,12 +1,12 @@
 package AlquillerC;
 
 //criando os atributos
-public class AlquilerCoches {
+public class Alquiler {
 	private int PrecioDiario;
 	private int Descuento;
 	
 //Acoes do exercício (Reservar e alugar o carro) 2 procedimentos:
-	public AlquilerCoches ( int PrecioDiario, int Descuento) {
+	public Alquiler ( int PrecioDiario, int Descuento) {
 		this.PrecioDiario = PrecioDiario;
 		this.Descuento = Descuento;	
 	}
