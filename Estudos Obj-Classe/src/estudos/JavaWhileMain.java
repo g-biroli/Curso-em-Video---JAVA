@@ -17,6 +17,7 @@ public class JavaWhileMain {
 		do {
 			System.out.println("palmeirasssssss");
 		} while (x > 3);
+		  x++;
 		}
 	}// while -> pode ser que seja executado nenhuma vez ou muitas vezes
 }	 // enquanto que o DO WHILE -> é garantido que será executado pelo menos uma vez
