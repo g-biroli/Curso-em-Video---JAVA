@@ -12,7 +12,7 @@ public class Tablets {
 			this.codigo = codigo;
 			this.marca = marca;
 			this.modelo = modelo;
-			
+			//exemplo a parte de um construtor apenas com 3 informacoes
 			
 		}
 		protected Tablets(String codigo, String marca, String modelo, String color, double precio) {
@@ -21,6 +21,7 @@ public class Tablets {
 			this.modelo = modelo;
 			this.color = color;
 			this.precio = precio;
+			// Construtor com todas as informacoes
 		}
 
 		protected String getCodigo() {
