@@ -12,7 +12,7 @@ public class AlquilerCoches {
 	}
 public int ReservarCoche(int NumeroDias) {
 	if (NumeroDias >0) {
-		int precio = ((NumeroDias*PrecioDiario-Descuento));
+		int precio = ((NumeroDias*PrecioDiario)-Descuento);
 		return precio;	
 	}
 	else {
