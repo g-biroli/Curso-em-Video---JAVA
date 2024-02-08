@@ -9,8 +9,8 @@ public class JavaWhileMain {
 		// primeiro se cria a variavel da condicao, assim o codigo verificará se é verdadeiro ou falso e dará continuidade
 		int n = 0;
 		int x = 2;
-				
-		while(n < 3) { 
+		while(n < 3) { 	
+	
 			System.out.println("Teste");
 			n++; // n++ = soma de n+1, assim a funcao funcionara 3 vezes e depois encerrara, devido 3 ser igual a 3.
 			
