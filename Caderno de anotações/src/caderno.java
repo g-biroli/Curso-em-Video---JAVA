@@ -12,7 +12,7 @@ public class caderno {
 	
 	//construtores
 //Usamos o "this" para fazer a relacao entre os dois NOME, MARCA.(Relacao do atributo com a variavel que recebera um valor)
-
+//Os construtores servem para inicializar os atributos
 
 
 

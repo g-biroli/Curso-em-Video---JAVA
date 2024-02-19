@@ -3,11 +3,12 @@ package ejemplosHerencia;
 public class Alumna extends Persona{
 	protected String numExp;
 	
-	public Alumna(String dni, String nombre, String numExp) {
+	protected Alumna(String dni, String nombre, String numExp) {
 		super(dni, nombre);
 		this.numExp = numExp;
 	}
 	
+
 	public String getNumExp() {
 		return numExp;
 	}
