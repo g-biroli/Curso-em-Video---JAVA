@@ -8,7 +8,7 @@ public class Principal {
 		System.out.println("Tu dni es: " +p.getDni());
 		p.setDni("4328J");
 		System.out.println("Tu dni ahora es: "+p.getDni());
-		
+		System.out.println("Tu dni ahora es: "+p.getDni());
 	
 
 	}
