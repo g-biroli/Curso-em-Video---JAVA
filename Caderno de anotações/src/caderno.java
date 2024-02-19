@@ -13,6 +13,11 @@ public class caderno {
 	//construtores
 //Usamos o "this" para fazer a relacao entre os dois NOME, MARCA.(Relacao do atributo com a variavel que recebera um valor)
 //Os construtores servem para inicializar os atributos
+	
+//Herencia
+//A herencia nada mais que a reutilizacao de uma classe em outra, importanto assim os atributos
+//Se faz a partir da criacao da class + extend NOMEDACLASSEQUEVAIIMPORTAR{}
+//Dps se faz o construtor a parti da aba source -> Generating constructor using fields, a partir dai está criado e unificado
 
 
 
