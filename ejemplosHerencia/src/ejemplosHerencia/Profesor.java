@@ -15,7 +15,9 @@ public class Profesor extends Persona{
 	protected void setSalario(double salario) {
 		this.salario = salario;
 	}
-	
+	public String toString() {
+		return super.toString()+ "con un salario de "+salario;
+	}
 	
 	
 

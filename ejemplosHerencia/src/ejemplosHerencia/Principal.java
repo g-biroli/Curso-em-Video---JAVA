@@ -1,7 +1,10 @@
 package ejemplosHerencia;
 
+import java.security.PublicKey;
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 public class Principal {
 // Exercicio escondido aqui
@@ -26,29 +29,48 @@ public class Principal {
 	}
 		String dni;
 		int opcion; 
-		Persona p = new Persona(dni, dni) ;
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Persona>listaPersonas = new ArrayList<Persona>();
+		Persona p = new Persona(dni, dni) ;
 		do  {
 			mostrarMenu();
 			opcion=sc.nextInt();
 			switch (opcion) {
 				case 1: System.out.println("Dime tu dni: ");
 						dni=sc.next();
-						if(!existePersona(dni, listaPersonas)) {			//metodo para comprovar se a alumna 
+						if(existePersona(dni, listaPersonas)) {			//metodo para comprovar se a alumna 
 							darAltaAlumna(dni, listaPersonas, sc,p);	//ja existe no cadastro na base de dados
 						} else {
 							System.out.println("La alumna ya existe");
-						}
-					break;
-			}
+						break;
+			
 				case 2: System.out.println("Dime tu dni: ");
 						dni=sc.next();
-						if(!existePersona(dni, listaPersonas)) {			 
+						if(existePersona(dni, listaPersonas)) {			 
 							darAltaAlumna(dni, listaPersonas, sc,p);	
 						} else {
 							System.out.println("La alumna ya existe");
-						}
+						break;
+				case 3: System.out.println("Dime tu dni: ");
+						dni=sc.next();
+						if(existePersona(dni, listaPersonas)) {			 
+							darBajaPersona(dni, listaPersonas);	
+						} else {
+						System.out.println("La alumna no existe");
+						break;
+				case 4: System.out.println("Dime tu dni: ");
+						dni=sc.next();
+						if(!existePersona(dni, listaPersonas)) {			 
+							darBajaPersona(dni, listaPersonas);	
+						} else {
+							System.out.println("El profesor no existe");
+						break;
+				case 5: System.out.println("Dime tu dni: ");
+						dni=sc.next();
+						if(!existePersona(dni, listaPersonas)) {			 
+							mostrarSalario(dni, listaPersonas);	
+						} else {
+							System.out.println("El profesor no existe");
 						break;
 
 		}while(opcion!=6);
@@ -79,7 +101,7 @@ public class Principal {
 			System.out.println("Dime tu expediente: ");
 			String expe=sc.next();
 			p = new Alumna(dni, nombre, expe);
-			listaPersonas.add(p); //pedindo para a Arraylist(listaPersonas) adicione o dado pessoa P.
+			listaPersonas.add((Alumna)p); //pedindo para a Arraylist(listaPersonas) adicione o dado pessoa P.
 		}
 		public static void darAltaProfesor(String dni, ArrayList<Persona>listaPersonas, Scanner sc, Persona p) {
 			System.out.println("Dime tu nombre: ");
@@ -88,7 +110,25 @@ public class Principal {
 			Double salario =sc.nextDouble();
 			p = new Profesor(dni, nombre, salario);
 			listaPersonas.add(p); 
+		}	
+		public static void darBajaPersona (String dni, ArrayList<Persona>listaPersonas) {
+			for(Persona per:listaPersonas) {
+				if(per.getDni().equals(dni)) {
+					listaPersonas.remove(per);
+					break;
+				}
+			}
 		}
-			
-		}
+		public static void mostrarSalario (String dni, ArrayList<Persona>listaPersonas) {
+			for (Persona per: listaPersonas) {
+				if (per instanceof Profesor) {
+					if (per.getDni().equals(dni)) {
+						System.out.println(per.toString());
+					}
+				}
+					
+				}
+			}
+		
 }
+
