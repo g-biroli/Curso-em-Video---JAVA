@@ -53,7 +53,7 @@ public class Principal {
 
 		}while(opcion!=6);
 
-		public static void mostrarMenu() {
+		public void mostrarMenu() {
 			System.out.println("Menu de opciones");
 			System.out.println("1. Dar alta alumna");
 			System.out.println("2. Dar alta profesor");
