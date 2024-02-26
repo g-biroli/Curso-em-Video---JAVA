@@ -1,9 +1,9 @@
 
 public class Empleado {
-	protected String nombre, apellido, dni;		//Atributos
-	protected int edad;
-	protected boolean casado; //duvida no metodo desse(nao sei qual metodo usar)
-	protected double salario;
+	String nombre, apellido, dni;		//Atributos
+	int edad;
+	boolean casado; //duvida no metodo desse(nao sei qual metodo usar)
+	double salario;
 	
 	 public Empleado(String nombre, String apellido, String dni, int edad, boolean casado, double salario) {
 		 this.nombre = nombre;					// hacendo el constructor del Empleado

@@ -3,12 +3,13 @@ public class Programador extends Empleado {		//herencia del Empleado
 	int lineasDeCodigoPorHora;					// nuevos atributos
 	String lenguajeDominante;
 	
-	public Programador (String nombre, String apellido, String dni, int edad, boolean casado, double salario, int lineasDeCodigoPorHora, String lenguajeDominante) {
-		super(nombre, apellido, dni, edad, casado, salario);		//constructor con la herencia y todo
+	protected Programador(String nombre, String apellido, String dni, int edad, boolean casado, double salario,
+			int lineasDeCodigoPorHora, String lenguajeDominante) {
+		super(nombre, apellido, dni, edad, casado, salario);
 		this.lineasDeCodigoPorHora = lineasDeCodigoPorHora;
 		this.lenguajeDominante = lenguajeDominante;
 	}
-	
+
 	public int getLineasDeCodigoPorHora() {
 		return lineasDeCodigoPorHora;
 	}
