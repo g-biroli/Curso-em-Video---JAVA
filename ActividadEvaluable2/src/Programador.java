@@ -10,14 +10,21 @@ public class Programador extends Empleado {		//herencia del Empleado
 		this.lenguajeDominante = lenguajeDominante;
 	}
 
-	public int getLineasDeCodigoPorHora() {
+	protected int getLineasDeCodigoPorHora() {
 		return lineasDeCodigoPorHora;
 	}
-	
-	public  int setLineasDeCodigoPorHora (int lineasDeCodigoPorHora) {
-		return this.lineasDeCodigoPorHora = lineasDeCodigoPorHora;		//no se se esta bien este
+
+	protected void setLineasDeCodigoPorHora(int lineasDeCodigoPorHora) {
+		this.lineasDeCodigoPorHora = lineasDeCodigoPorHora;
 	}
-	public String getLenguajeDominante() {
+
+	protected String getLenguajeDominante() {
 		return lenguajeDominante;
 	}
+
+	protected void setLenguajeDominante(String lenguajeDominante) {
+		this.lenguajeDominante = lenguajeDominante;
+	}
+
+	
 }
