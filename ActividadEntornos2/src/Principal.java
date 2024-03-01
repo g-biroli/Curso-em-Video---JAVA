@@ -9,6 +9,7 @@ public class Principal {
 		int dificultad;
 		int opcion;
 		double puntuacion, puntuacionfinal;
+		boolean salir = false;
 		ArrayList<Equipo>listaEquipo = new ArrayList<Equipo>();
 		
 		Scanner sc = new Scanner(System.in);
@@ -22,8 +23,8 @@ public class Principal {
 			switch (opcion) {
 				case 1: System.out.println("Dime tu puntuación: ");
 						puntuacion=sc.nextDouble();
-						System.out.println("Dime la dificultad del ejercicio, 1 para ejercicios fáciles, 2 para medios y 3 para difíciles.");
-						int dificultad = sc.nextInt();
+						System.out.println("Dime la dificultad del ejercicio, 1 para ejercicios fáciles, 2 para medios y 3 para difíciles: .");
+						dificultad = sc.nextInt();
 						double puntuacionFinal = CalcularPuntuación(puntuacion, dificultad);
 						System.out.println("Puntuacion Final es: " +puntuacionFinal);		
 						
@@ -31,14 +32,17 @@ public class Principal {
 				
 				case 2: System.out.println("Dime tu edad: ");
 						edad=sc.nextInt();
-						if(edad >= 18) {
-							System.out.println("Mira, eres mayor de edad, puedes participar en la prueba. Buena suerte. ");					
-						}	else {
-							System.out.println("Desafortunadamente no tienes edad para participar en la prueba.");
-							break;
+						verificarEdad(edad);
+						break;
+				case 3:
+                    	salir = true;
+                    	System.out.println("Salindo");
+                    	break;
 							
-		}while(opcion!=3);	
-	
+		
+				}while(opcion!=3);
+}
+
 		public static void mostrarMenu() {
 			System.out.println("Menu de opciones");			
 			System.out.println("1. Calcular la puntuación del equipo");
@@ -49,5 +53,14 @@ public class Principal {
 		public static int CalcularPuntuación (double puntuacion, int dificultad) {
 			return (int) (puntuacion * dificultad);
 		}
-		//teste commit
+		
+		public static void verificarEdad(int edad) {
+				if(edad >= 18) {
+					System.out.println("Mira, eres mayor de edad, puedes participar en la prueba. Buena suerte. ");					
+				}	else {
+					System.out.println("Desafortunadamente no tienes edad para participar en la prueba.");
+				}
+		}
 }
+
+

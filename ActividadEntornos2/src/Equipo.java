@@ -6,7 +6,7 @@ public class Equipo {
 	int edad, dificultad;
 	double puntuacion;
 	
-	public Equipo( String nombre, String dni, int edad, double pontuacion, int dificultad) {
+	public Equipo( String nombre, String dni, int edad, double puntuacion, int dificultad) {
 		this.Nombre = nombre;
 		this.dni = dni;
 		this.edad = edad;
