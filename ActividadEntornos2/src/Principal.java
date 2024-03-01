@@ -37,8 +37,7 @@ public class Principal {
 				case 3: salir = true;
                     	System.out.println("Salindo");
                     	break;
-							//teste
-		
+							//te
 				}while(opcion!=3);
 }
 
