@@ -60,6 +60,7 @@ public class Principal {
 					System.out.println("Desafortunadamente no tienes edad para participar en la prueba.");
 				}
 		}
+		//teste
 }
 
 
