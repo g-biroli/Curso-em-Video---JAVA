@@ -34,8 +34,7 @@ public class Principal {
 						edad=sc.nextInt();
 						verificarEdad(edad);
 						break;
-				case 3:
-                    	salir = true;
+				case 3: salir = true;
                     	System.out.println("Salindo");
                     	break;
 							
