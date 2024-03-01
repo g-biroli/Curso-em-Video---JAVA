@@ -49,4 +49,5 @@ public class Principal {
 		public static int CalcularPuntuación (double puntuacion, int dificultad) {
 			return (int) (puntuacion * dificultad);
 		}
+		//teste commit
 }
