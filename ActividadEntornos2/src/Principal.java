@@ -5,16 +5,16 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		int edad;
-		int dificultad;
-		int opcion;
-		double puntuacion, puntuacionfinal;
+		int edad = 0;;
+		int dificultad = 0;;
+		int opcion;;
+		double puntuacion = 0, puntuacionfinal;
 		boolean salir = false;
 		ArrayList<Equipo>listaEquipo = new ArrayList<Equipo>();
 		
 		Scanner sc = new Scanner(System.in);
 		
-		Equipo p = new Equipo(null, null, edad, puntuacion, edad);
+		Equipo p = new Equipo(null, null, edad, puntuacion, dificultad);
 		listaEquipo.add(p);
 
 		do  {
@@ -28,7 +28,7 @@ public class Principal {
 						double puntuacionFinal = CalcularPuntuación(puntuacion, dificultad);
 						System.out.println("Puntuacion Final es: " +puntuacionFinal);		
 						
-				}break;
+				break;
 				
 				case 2: System.out.println("Dime tu edad: ");
 						edad=sc.nextInt();
@@ -37,9 +37,10 @@ public class Principal {
 				case 3: salir = true;
                     	System.out.println("Salindo");
                     	break;
-							//te
-				}while(opcion!=3);
-}
+                    		
+			}
+		}while(opcion!=3);
+	}
 
 		public static void mostrarMenu() {
 			System.out.println("Menu de opciones");			

@@ -26,10 +26,10 @@ public class Equipo {
 	protected void setDni(String dni) {
 		this.dni = dni;
 	}
-	protected double getPontuacion() {
+	protected double getPuntuacion() {
 		return puntuacion;
 	}
-	protected void setPontuacion(double puntuacion) {
+	protected void setPuntuacion() {
 		this.puntuacion = puntuacion;
 	}
 	protected int getDificultad() {
