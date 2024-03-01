@@ -28,7 +28,7 @@ public class Principal {
 						double puntuacionFinal = CalcularPuntuación(puntuacion, dificultad);
 						System.out.println("Puntuacion Final es: " +puntuacionFinal);		
 						
-				break;
+						break;
 				
 				case 2: System.out.println("Dime tu edad: ");
 						edad=sc.nextInt();

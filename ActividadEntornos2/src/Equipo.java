@@ -29,7 +29,7 @@ public class Equipo {
 	protected double getPuntuacion() {
 		return puntuacion;
 	}
-	protected void setPuntuacion() {
+	protected void setPuntuacion(double puntuacion) {
 		this.puntuacion = puntuacion;
 	}
 	protected int getDificultad() {
