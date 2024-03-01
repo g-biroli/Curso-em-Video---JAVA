@@ -49,7 +49,7 @@ public class Principal {
 			System.out.println("3. Salir");
 		}		
 		
-		public static int CalcularPuntuación (double puntuacion, int dificultad) {
+		public static int CalcularPuntuacion (double puntuacion, int dificultad) {
 			return (int) (puntuacion * dificultad);
 		}
 		
@@ -60,7 +60,8 @@ public class Principal {
 					System.out.println("Desafortunadamente no tienes edad para participar en la prueba.");
 				}
 		}
-		//teste
+		
+
 }
 
 
