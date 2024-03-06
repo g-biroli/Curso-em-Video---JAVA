@@ -7,7 +7,7 @@ public class Alumna extends Persona{
 		super(dni, nombre);
 		this.numExp = numExp;
 	}
-	
+	//comentario para atualizar commit teste. Problema no app
 
 	public String getNumExp() {
 		return numExp;
