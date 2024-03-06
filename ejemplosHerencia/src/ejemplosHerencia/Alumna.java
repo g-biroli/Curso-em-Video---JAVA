@@ -8,6 +8,7 @@ public class Alumna extends Persona{
 		this.numExp = numExp;
 	}
 	//comentario para atualizar commit teste. Problema no app
+	//teste
 
 	public String getNumExp() {
 		return numExp;
